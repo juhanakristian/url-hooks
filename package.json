@@ -1,0 +1,33 @@
+{
+  "name": "url-hooks",
+  "version": "1.0.0",
+  "description": "A React Hook for getting URL path parameters",
+  "main": "index.js",
+  "scripts": {
+    "build": "tsc",
+    "test": "test"
+  },
+  "types": "index.d.ts",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/juhanakristian/usepathparams.git"
+  },
+  "keywords": [
+    "react",
+    "url",
+    "parameters"
+  ],
+  "author": "Juhana Jauhiainen <juhana.jauhiainen@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/juhanakristian/usepathparams/issues"
+  },
+  "homepage": "https://github.com/juhanakristian/usepathparams#readme",
+  "devDependencies": {
+    "typescript": "^4.2.4"
+  },
+  "dependencies": {
+    "@types/path-to-regexp": "^1.7.0",
+    "path-to-regexp": "^6.2.0"
+  }
+}
