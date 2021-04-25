@@ -1,11 +1,11 @@
-import { match } from "path-to-regexp";
-
-interface Match {
-  params: object;
-}
+import { compile, match } from "path-to-regexp";
 
 export default function usePathParams(path: string) {
   const matchFn = match(path, { decode: decodeURIComponent });
-  const matchResult = matchFn(window.location.pathname) as Match;
-  return matchResult.params;
+  const matchResult = matchFn(window.location.pathname);
+
+  return {
+    toPath: compile(path),
+    params: matchResult ? matchResult.params : undefined,
+  };
 }
