@@ -1,3 +1,4 @@
 import usePathParams from "./usePathParams";
+import useSearchParams from "./useSearchParams";
 
-export { usePathParams };
+export { usePathParams, useSearchParams };
